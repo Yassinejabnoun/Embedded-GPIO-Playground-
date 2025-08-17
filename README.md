@@ -1,4 +1,4 @@
-# Embedded GPIO Playground 🚦
+# GPIO Playground 🚦
 
 This project demonstrates practical usage of **GPIOs** (General Purpose Input/Output) 
 on an STM32 microcontroller. Using buttons and LEDs, we implement fundamental concepts such as 
