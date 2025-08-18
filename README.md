@@ -59,6 +59,15 @@ and documented here as a standalone project.
 
 ---
 
+## 🎥 Demonstration
+
+Watch the project in action on YouTube:  
+(I m working on my yt kannal) 
+
+[![GPIO Playground Demo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
+
+---
+
 ## 📜 License
 
 MIT License – free to use for personal or professional projects.
