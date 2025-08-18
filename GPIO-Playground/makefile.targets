@@ -1,0 +1,11 @@
+ldclean:
+	$(RM) linker-script-debug.ld
+	$(RM) linker-script-release.ld
+
+$(PWD)/linker-script-debug.ld: ../mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/TOOLCHAIN_GCC_ARM/STM32F401XE.ld
+	$(PREPROC_CMD) -DMBED_DEBUG -DMBED_TRAP_ERRORS_ENABLED=1 -DMBED_MINIMAL_PRINTF -Wl,-n -Wl,--start-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys -Wl,--end-group $< -o $@
+
+$(PWD)/linker-script-release.ld: ../mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE/TOOLCHAIN_GCC_ARM/STM32F401XE.ld
+	$(PREPROC_CMD) -DNDEBUG -DMBED_MINIMAL_PRINTF -Wl,-n -Wl,--start-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys -Wl,--end-group $< -o $@
+
+$(EXECUTABLES): $(PWD)/linker-script-debug.ld
