@@ -45,7 +45,7 @@ and documented here as a standalone project.
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/yassinejabnoun/gpio-playground.git
+   git clone https://github.com/yassinejabnoun/GPIO-Playground.git
 2. Import the project into STM32CubeIDE.
 3. Connect the hardware (LEDs, buttons, logic analyzer).
 4. Build & flash the program.
