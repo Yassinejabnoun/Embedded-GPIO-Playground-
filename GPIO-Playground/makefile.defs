@@ -1,1 +1,0 @@
-export PREPROC_CMD = arm-none-eabi-cpp -E -P
